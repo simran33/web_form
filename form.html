@@ -1,33 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>html_form</title>
     <style>
-
+        body{
+            /* background-color: #3095a1; */
+            background-image: url(img/back.png);
+            margin: 0px;
+            padding: 0px;
+        }
+.container{
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    /* border: 5px solid rgb(8, 8, 8); */
+    /* width: 600px; */
+    /* height: 900px; */
+    font-family: 'Pacifico', cursive;
+    /* background-color:#b3021f; */
+    color:  #0e0d0d ;
+    position: relative;
+    padding-top: 50px;
+}
+input[type='text']{
+    /* this is psuedo selector used for target the property */
+    padding: 10px;
+    border: 3px solid #456a6e;
+    background-color:#b2ced1;
+}
 
     </style>
 </head>
+
 <body>
     <div class="container">
-    <form action="noaction.html">
-        <h1>Student Registration form</h1>
-        <h3>Fill out the form carefully for registration</h3>
-        <label for="FName">First Name</label>
-        <input type="text" placeholder="First_name">
-        <input type="text" placeholder="Last_name"><br>
-        <label for="birthdate">Birth date</label>
-        <input type="date" id="birthday" name="birthday">
-
-<!-- <input type="date " placeholder="date_of_birth">
-<input type="email" name="email" placeholder="email">
-<input type="file" name="file" id=""> -->
-<label for="birthdate">Birth Date</label>
-<input type="date" id="">
-
-    </form>
-</div>
+        <form action="noaction.html">
+            <h1>Student Registration form</h1>
+            <h3>Fill out the form carefully for registration</h3>
+            <label for="fname">Name</label>
+            <input type="text" placeholder="First_name">
+            <input type="text" placeholder="Last_name"><br>
+            <label for="birthdate">Birth date</label>
+            <input type="date" name="birthday"><br>
+            <label for="Gender">Gender</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br>
+            <label for="addres">Addres</label>
+            <input type="text" id="addres"><br>
+            <label for="city">City</label>
+            <input type="text" id="city"><br>
+            <label for="postalCode">PostalCode</label>
+            <input type="text" id="postalCode"><br>
+            <label for="studentemail">StudentEmail</label>
+            <input type="text" id="studentemail"><br>
+            <label for="postalCode">PostalCode</label>
+            <input type="email" id="postalCode"><br>
+            <label for="contactno">ContactNo</label>
+            <input type="tel" id="contactno"><br>
+            <label for="course">Course</label>
+            <select name="cars" id="cars">
+                <option value="b.tech">B.tech</option>
+                <option value="Bba">Bba</option>
+                <option value="Mba">Mba</option>
+                <option value="Diploma">Diploma</option>
+            </select><br>
+            <label for="additional">Additional Comment</label>
+        <input type="text" name="addcomment" id="Add Comment"><br>
+        <input type="button" value="submit">
+    </div>
 </body>
+
 </html>
